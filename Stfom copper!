@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/Nick-s-Modded-KAVO-Lib/main/Nick'sModdedKavoLib.lua"))()
-local Window = Library.CreateLib("Stfom Copper *FREE VERSION*", "DarkTheme")
+local Window = Library.CreateLib("Stfom Copper Aka Impactfuls sword", "BloodTheme")
 
 local MAINTab = Window:NewTab("Blatant")
 local MAINSection = MAINTab:NewSection("Fov")
@@ -106,7 +106,7 @@ MAINSection:NewButton("Spammer", "ButtonInfo", function()
     local Players = game:GetService("Players")
 local chatrem = game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest
 
-local phrases = {" haha, use stfom copper so u dont cope!!", " just died cuz they didnt use stfom copper!", "L bozo", " Yapper alert stfom copper on top!"}  -- Add your phrases here
+local phrases = {" haha, use stfom copper so u dont cope!!", " just died by impactfuls i say hi!", "ha! L bozo impactfuls packed u by his script", " Yapper alert stfom copper impactfuls sword on top!"}  -- Add your phrases here
 
 local function getRandomPlayerName()
     local playersList = Players:GetPlayers()
@@ -601,3 +601,5 @@ InstaSection = InstaTab:NewSection("teleport scriot but made as this enjoy! ")
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/Tp%20Place%20GUI'),true))()
 end)
 
+local CreditsTab = Window:NewTab("Credits")
+local CreditsSection = CreditsTab:NewSection("Impactfuls aka AgentV4MP owner")
