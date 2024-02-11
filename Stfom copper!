@@ -895,5 +895,40 @@ InstaSection = InstaTab:NewSection("teleport scriot but made as this enjoy! ")
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/Tp%20Place%20GUI'),true))()
 end)
 
+local GrindTab = Window:NewTab("Grinding")
+local GrindSection = GrindTab:NewSection("Anti afk")
+GrindSection:NewButton("anti afk!", "ButtonInfo", function()
+      loadstring(game:GetObjects("rbxassetid://15050819751")[1].Source)()
+end)
+
+local GrindSection = GrindTab:NewSection("Additional reach")
+GrindSection:NewButton("brew softworks", "ButtonInfo", function()
+      --subscribe and like to Prox1yz
+--Updated version not patched!
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Brew-Softworks/StealTime/main/ST.lua"))()
+end)
+
+local GrindSection = GrindTab:NewSection("infinite yield")
+GrindSection:NewButton("infinite yield", "ButtonInfo", function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+local GrindSection = GrindTab:NewSection("Lag switching")
+GrindSection:NewButton("lag switch", "ButtonInfo", function()
+      --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/Protected%20-%202023-05-28T225112.055.lua.txt'),true))()
+end)
+
+local ChangelogTab = Window:NewTab("*Updates*")
+local CreditsSection = CreditsTab:NewSection("[+] Created Stfom Copper!")
+local CreditsSection = CreditsTab:NewSection("[+] Changed Added way more functions!")
+local CreditsSection = CreditsTab:NewSection("[+] Changed name!")
+local CreditsSection = CreditsTab:NewSection("[+] Made Universal!")
+local CreditsSection = CreditsTab:NewSection("[+] Added more tabs!")
+local CreditsSection = CreditsTab:NewSection("[+] Fixed bugs!")
+local CreditsSection = CreditsTab:NewSection("[+] Added Grinding tabs!")
+
 local CreditsTab = Window:NewTab("Credits")
 local CreditsSection = CreditsTab:NewSection("Impactfuls aka AgentV4MP owner")
