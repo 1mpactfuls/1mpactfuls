@@ -913,6 +913,14 @@ GrindSection:NewButton("infinite yield", "ButtonInfo", function()
       loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
+local GrindSection = GrindTab:NewSection("Anti chat log")
+GrindSection:NewButton("Anti chat log", "ButtonInfo", function()
+      --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AnthonyIsntHere/anthonysrepository/main/scripts/AntiChatLogger.lua", true))()
+end)
+
 local GrindSection = GrindTab:NewSection("Lag switching")
 GrindSection:NewButton("lag switch", "ButtonInfo", function()
       --[[
@@ -1949,6 +1957,10 @@ local ChangeSection = ChangeTab:NewSection("[+] Made Universal!")
 local ChangeSection = ChangeTab:NewSection("[+] Added more tabs!")
 local ChangeSection = ChangeTab:NewSection("[+] Fixed bugs!")
 local ChangeSection = ChangeTab:NewSection("[+] Added Grinding tabs!")
+local ChangeSection = ChangeTab:NewSection("[+] Added updated grinding tabs wayy more!")
+local ChangeSection = ChangeTab:NewSection("[+] More functions")
+local ChangeSection = ChangeTab:NewSection("[+] Updating daily from now on!")
+local ChangeSection = ChangeTab:NewSection("[+] making other game scripts too!!")
 
 local CreditsTab = Window:NewTab("Credits")
 local CreditsSection = CreditsTab:NewSection("Impactfuls aka AgentV4MP owner")
