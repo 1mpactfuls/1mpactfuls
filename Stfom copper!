@@ -896,9 +896,36 @@ InstaSection = InstaTab:NewSection("teleport scriot but made as this enjoy! ")
 end)
 
 local GrindTab = Window:NewTab("Grinding")
-local GrindSection = GrindTab:NewSection("Anti afk")
+local GrindSection = GrindTab:NewSection("Anti Lag")
 GrindSection:NewButton("anti afk!", "ButtonInfo", function()
       loadstring(game:GetObjects("rbxassetid://15050819751")[1].Source)()
+end)
+local GrindSection = GrindTab:NewSection("Anti afk")
+GrindSection:NewButton("anti afk!", "ButtonInfo", function()
+      _G.Settings = {
+    Players = {
+        ["Ignore Me"] = true, -- Ignore your Character
+        ["Ignore Others"] = true-- Ignore other Characters
+    },
+    Meshes = {
+        Destroy = false, -- Destroy Meshes
+        LowDetail = true -- Low detail meshes (NOT SURE IT DOES ANYTHING)
+    },
+    Images = {
+        Invisible = true, -- Invisible Images
+        LowDetail = false, -- Low detail images (NOT SURE IT DOES ANYTHING)
+        Destroy = false, -- Destroy Images
+    },
+    ["No Particles"] = true, -- Disables all ParticleEmitter, Trail, Smoke, Fire and Sparkles
+    ["No Camera Effects"] = true, -- Disables all PostEffect's (Camera/Lighting Effects)
+    ["No Explosions"] = true, -- Makes Explosion's invisible
+    ["No Clothes"] = true, -- Removes Clothing from the game
+    ["Low Water Graphics"] = true, -- Removes Water Quality
+    ["No Shadows"] = true, -- Remove Shadows
+    ["Low Rendering"] = true, -- Lower Rendering
+    ["Low Quality Parts"] = true -- Lower quality parts
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()
 end)
 
 local GrindSection = GrindTab:NewSection("Additional reach")
@@ -1961,6 +1988,8 @@ local ChangeSection = ChangeTab:NewSection("[+] Added updated grinding tabs wayy
 local ChangeSection = ChangeTab:NewSection("[+] More functions")
 local ChangeSection = ChangeTab:NewSection("[+] Updating daily from now on!")
 local ChangeSection = ChangeTab:NewSection("[+] making other game scripts too!!")
+local ChangeSection = ChangeTab:NewSection("[+] Added antilag at grinding")
+local ChangeSection = ChangeTab:NewSection("[+] added autoclicker in legit")
 
 local CreditsTab = Window:NewTab("Credits")
-local CreditsSection = CreditsTab:NewSection("Impactfuls aka AgentV4MP owner")
+local CreditsSection = CreditsTab:NewSection("Discord:x_1mpactfuls | roblox:AgentV4MP owner")
