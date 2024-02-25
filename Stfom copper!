@@ -831,6 +831,14 @@ game:GetService("RunService").RenderStepped:connect(function()
     end
 end)
 end)
+local LegitSection = LegitTab:NewSection("Auto click")
+LegitSection:NewButton("Auto", "ButtonInfo", function()
+    --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+getgenv().key = "Hostile"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/The-telligence/main/MC%20KSystem%202"))()
+end)
 
 local gui = Instance.new("ScreenGui")
 gui.Name = "patrickGui"
