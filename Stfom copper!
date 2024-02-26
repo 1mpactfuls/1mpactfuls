@@ -4,9 +4,23 @@ local Window = Library.CreateLib("Stfom Copper Aka Impactfuls sword", "BloodThem
 local MAINTab = Window:NewTab("Blatant")
 local MAINSection = MAINTab:NewSection("Fov")
 MAINSection:NewButton("FOV", "ButtonInfo", function()
-    local FovNumber = 120 --Enter your FOV number here
-local Camera = workspace.CurrentCamera
-Camera.FieldOfView = FovNumber
+    -- Place this script in StarterPlayerScripts to affect all players
+local function adjustFOV()
+    while true do
+        -- Ensure the player and camera are available
+        local player = game.Players.LocalPlayer
+        if player then
+            local camera = game.Workspace.CurrentCamera
+            if camera then
+                camera.FieldOfView = 120 -- Set the FOV to 120
+            end
+        end
+        wait(1) -- Wait for 1 second before the next update
+    end
+end
+
+-- Start the FOV adjustment loop
+adjustFOV()
 end)
 local MAINSection = MAINTab:NewSection("Speed")
 MAINSection:NewToggle("Bypassed speed", "ToggleInfo", function(state)
@@ -989,9 +1003,23 @@ local Window = Library.CreateLib("Impactfuls aim", "BloodTheme")
 local MAINTab = Window:NewTab("Main")
 local MAINSection = MAINTab:NewSection("Fov")
 MAINSection:NewButton("FOV", "ButtonInfo", function()
-    local FovNumber = 120 --Enter your FOV number here
-local Camera = workspace.CurrentCamera
-Camera.FieldOfView = FovNumber
+    -- Place this script in StarterPlayerScripts to affect all players
+local function adjustFOV()
+    while true do
+        -- Ensure the player and camera are available
+        local player = game.Players.LocalPlayer
+        if player then
+            local camera = game.Workspace.CurrentCamera
+            if camera then
+                camera.FieldOfView = 120 -- Set the FOV to 120
+            end
+        end
+        wait(1) -- Wait for 1 second before the next update
+    end
+end
+
+-- Start the FOV adjustment loop
+adjustFOV()
 end)
 
 local MAINSection = MAINTab:NewSection("Aimbot")
