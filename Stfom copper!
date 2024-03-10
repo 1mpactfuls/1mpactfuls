@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/Nick-s-Modded-KAVO-Lib/main/Nick'sModdedKavoLib.lua"))()
-local Window = Library.CreateLib("Stfom Copper Aka Impactfuls sword", "BloodTheme")
+local Window = Library.CreateLib("Nexus X Aka Impactfuls sword", "BloodTheme")
 
 local MAINTab = Window:NewTab("Blatant")
 local MAINSection = MAINTab:NewSection("Fov")
@@ -120,7 +120,7 @@ MAINSection:NewButton("Spammer", "ButtonInfo", function()
     local Players = game:GetService("Players")
 local chatrem = game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest
 
-local phrases = {" haha, use stfom copper so u dont cope!!", " just died by impactfuls i say hi!", "ha! L bozo impactfuls packed u by his script", " Yapper alert stfom copper impactfuls sword on top!"}  -- Add your phrases here
+local phrases = {" haha, use Nexus x! so u dont cope!!", " just died i suggest u use nexus x L!", "ha! L bozo Nexus x packed u", " Yapper alert Nexus x! impactfuls sword on top!"}  -- Add your phrases here
 
 local function getRandomPlayerName()
     local playersList = Players:GetPlayers()
