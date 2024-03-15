@@ -2008,9 +2008,17 @@ game.Players.PlayerAdded:Connect(function(v)
     coroutine.wrap(lineesp)()
 end)
 end)
-local CreditsTab = Window:NewTab("Credits")
-local CreditsSection = CreditsTab:NewSection("Impactfuls aka AgentV4MP owner")
+
+local Ztab = Window:NewTab("*Other Scripts*")
+local ZSection = ZTab:NewSection("Reach Scripts Best Recommended")
+ZSection:NewButton("1mpactfuls Fav 1", "ButtonInfo", function()
+    loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/Pstrw/Public-Scripts/main/SlothHub.lua"))();"))();
 end)
+
+ZSection:NewButton("1mpactfuls Fav 2", "ButtonInfo", function()
+    loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/Pstrw/Public-Scripts/main/SlthsUniversalReachs"))();"))();
+end)
+
 
 local ChangeTab = Window:NewTab("*Updates*")
 local ChangeSection = ChangeTab:NewSection("[+] Created Stfom Copper!")
