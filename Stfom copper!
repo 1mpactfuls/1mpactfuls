@@ -2012,16 +2012,27 @@ end)
 local Ztab = Window:NewTab("*Other Scripts*")
 local ZSection = ZTab:NewSection("Reach Scripts Best Recommended")
 ZSection:NewButton("1mpactfuls Fav 1", "ButtonInfo", function()
-    loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/Pstrw/Public-Scripts/main/SlothHub.lua"))()
-end)
+    loadstring(game:HttpGet("https://gist.githubusercontent.com/Pstrw/3c489bebb942ad2bdeb8fd75c2fa4ed2/raw/2307aac0e78094b6a343c4c4afe9aac5b54ef269/ur"))();
 
-ZSection:NewButton("1mpactfuls Fav 2", "ButtonInfo", function()
-    loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/Pstrw/Public-Scripts/main/SlthsUniversalReachs"))()
-end)
+local UserInputService = game:GetService("UserInputService")
+local gui
 
-ZSection:NewButton("1mpactfuls Fav 3", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Pstrw/Public-Scripts/main/Nightmare.lua"))()
+repeat
+    gui = game.CoreGui:FindFirstChild("dark_UI")
+    wait()
+until gui
+
+UserInputService.InputBegan:Connect(function(input)
+    if input.KeyCode == Enum.KeyCode.LeftShift and game:GetService("Players").LocalPlayer then
+        local currentEnabledValue = gui.Enabled
+        gui.Enabled = not currentEnabledValue
+    end
 end)
+end)
+local ZSection = ZTab:NewSection("use cframe reach")
+local ZSection = ZTab:NewSection("its the best")
+local ZSection = ZTab:NewSection("use keyboard and preess left shift")
+local ZSection = ZTab:NewSection("keyboard script can be found in grinding")
 
 local ZSection = ZTab:NewSection("Best speed bypass")
 ZSection:NewButton("1mpactfuls Fav Speed", "ButtonInfo", function()
@@ -2162,6 +2173,8 @@ local ChangeSection = ChangeTab:NewSection("[+] Updating daily from now on!")
 local ChangeSection = ChangeTab:NewSection("[+] making other game scripts too!!")
 local ChangeSection = ChangeTab:NewSection("[+] Added antilag at grinding")
 local ChangeSection = ChangeTab:NewSection("[+] added autoclicker in legit")
+local ChangeSection = ChangeTab:NewSection("[+] added others tab and functions")
+local ChangeSection = ChangeTab:NewSection("[+] fixed bugs")
 
 local CreditsTab = Window:NewTab("Credits")
 local CreditsSection = CreditsTab:NewSection("Discord:x_1mpactfuls | roblox:AgentV4MP owner")
