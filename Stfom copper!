@@ -994,10 +994,10 @@ GrindSection:NewButton("keyboard 2", "ButtonInfo", function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
 end)
 
-local OthersTab = Window:NewTab("Other Scripts Made by me")
+local OthersTab = Window:NewTab("Scripts Made by me")
 local OthersSection = OthersTab:NewSection("Aim script for gun games")
 OthersSection:NewButton("Impactfuls aim", "ButtonInfo", function()
-      local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/Nick-s-Modded-KAVO-Lib/main/Nick'sModdedKavoLib.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/Nick-s-Modded-KAVO-Lib/main/Nick'sModdedKavoLib.lua"))()
 local Window = Library.CreateLib("Impactfuls aim", "BloodTheme")
 
 local MAINTab = Window:NewTab("Main")
