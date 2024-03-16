@@ -1,0 +1,156 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/Nick-s-Modded-KAVO-Lib/main/Nick'sModdedKavoLib.lua"))()
+local Window = Library.CreateLib("Nexus X Aka Impactfuls sword [*V 2.0*]", "BloodTheme")
+
+
+local ZTab = Window:NewTab("*Other Scripts*")
+local ZSection1 = ZTab:NewSection("Reach Scripts Best Recommended")
+ZSection1:NewButton("1mpactfuls Fav 1", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://gist.githubusercontent.com/Pstrw/3c489bebb942ad2bdeb8fd75c2fa4ed2/raw/2307aac0e78094b6a343c4c4afe9aac5b54ef269/ur"))();
+
+    local UserInputService = game:GetService("UserInputService")
+    local gui
+
+    repeat
+        gui = game.CoreGui:FindFirstChild("dark_UI")
+        wait()
+    until gui
+
+    UserInputService.InputBegan:Connect(function(input)
+        if input.KeyCode == Enum.KeyCode.LeftShift and game:GetService("Players").LocalPlayer then
+            local currentEnabledValue = gui.Enabled
+            gui.Enabled = not currentEnabledValue
+        end
+    end)
+end)
+
+local ZSection2 = ZTab:NewSection("use cframe reach")
+local ZSection3 = ZTab:NewSection("its the best")
+local ZSection4 = ZTab:NewSection("use keyboard and press left shift")
+local ZSection5 = ZTab:NewSection("keyboard script can be found in grinding")
+
+local ZSection6 = ZTab:NewSection("Best speed bypass")
+ZSection6:NewButton("1mpactfuls Fav Speed", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Pstrw/Public-Scripts/main/UniversalSpeedBypass"))()
+end)
+
+local ZSection7 = ZTab:NewSection("invisible")
+ZSection7:NewButton("invisible in games where you can walk through players", "ButtonInfo", function()
+    local offset = 1100
+    local invisible = game.Players.LocalPlayer
+    local grips = {}
+    local heldTool
+    local gripChanged
+    local handle
+    local weld
+
+    function setDisplayDistance(distance)
+        for _, player in pairs(game.Players:GetPlayers()) do
+            if player.Character and player.Character:FindFirstChildWhichIsA("Humanoid") then
+                player.Character:FindFirstChildWhichIsA("Humanoid").NameDisplayDistance = distance
+                player.Character:FindFirstChildWhichIsA("Humanoid").HealthDisplayDistance = distance
+            end
+        end
+    end
+
+    local tool = Instance.new("Tool", game.Players.LocalPlayer.Backpack)
+    tool.Name = "Invisible"
+    tool.RequiresHandle = false
+    tool.CanBeDropped = false
+
+    tool.Equipped:Connect(function()
+        wait()
+        if not invisible then
+            invisible = true
+            tool.Name = "Enabled Invisible"
+            if handle then
+                handle:Destroy()
+            end
+            if weld then
+                weld:Destroy()
+            end
+            handle = Instance.new("Part", workspace)
+            handle.Name = "Handle"
+            handle.Transparency = 1
+            handle.CanCollide = false
+            handle.Size = Vector3.new(2, 1, 1)
+            weld = Instance.new("Weld", handle)
+            weld.Part0 = handle
+            weld.Part1 = game.Players.LocalPlayer.Character.HumanoidRootPart
+            weld.C0 = CFrame.new(0, offset - 1.5, 0)
+            setDisplayDistance(offset + 100)
+            workspace.CurrentCamera.CameraSubject = handle
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0, offset, 0)
+            game.Players.LocalPlayer.Character.Humanoid.HipHeight = offset
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+            for _, child in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+                if child:IsA("Tool") and child ~= tool then
+                    grips[child] = child.Grip
+                end
+            end
+        elseif invisible then
+            invisible = false
+            tool.Name = "Disabled Invisible"
+            if handle then
+                handle:Destroy()
+            end
+            if weld then
+                weld:Destroy()
+            end
+            for _, child in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+                if child:IsA("Tool") then
+                    child.Parent = game.Players.LocalPlayer.Backpack
+                end
+            end
+            for tool, grip in pairs(grips) do
+                if tool then
+                    tool.Grip = grip
+                end
+            end
+            heldTool = nil
+            setDisplayDistance(100)
+            workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0, -offset, 0)
+            game.Players.LocalPlayer.Character.Humanoid.HipHeight = 0
+        end
+        tool.Parent = game.Players.LocalPlayer.Backpack
+    end)
+end)
+local gui = Instance.new("ScreenGui")
+gui.Name = "patrickGui"
+gui.Parent = game.CoreGui
+
+--screengui = gui
+
+
+
+	local TextButton = Instance.new("TextButton")
+-- Text
+TextButton.Text = "Toggle Stfom copper!"
+TextButton.TextSize = 24
+-- Color
+TextButton.TextColor3 = Color3.new(1, 1, 1)
+TextButton.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton.BorderColor3 = Color3.new(1, 1, 1)
+-- thickness
+TextButton.BorderSizePixel = 4
+-- Text Code
+TextButton.Font = Enum.Font.Code
+-- Size
+TextButton.Size = UDim2.new(0.2, 0, 0.1, 0)
+-- Posisition
+TextButton.Position = UDim2.new(0, 0, 0.4, 0)
+-- Function
+TextButton.MouseButton1Click:Connect (function()
+Library:ToggleUI()
+end)
+TextButton.Parent = gui
+TextButton.Draggable = true
+
+	local cornerUI = Instance.new("UICorner")
+cornerUI.CornerRadius = UDim.new(0, 5)
+cornerUI.Parent = TextButton
+
+	local uiStroke = Instance.new("UIStroke")
+    uiStroke.Color = Color3.new(0, 0, 0)
+    uiStroke.Thickness = 2
+    uiStroke.Parent = TextButton 
