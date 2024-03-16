@@ -2178,3 +2178,4 @@ local ChangeSection = ChangeTab:NewSection("[+] fixed bugs")
 
 local CreditsTab = Window:NewTab("Credits")
 local CreditsSection = CreditsTab:NewSection("Discord:x_1mpactfuls | roblox:AgentV4MP owner")
+end)
